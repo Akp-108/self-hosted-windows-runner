@@ -22,7 +22,7 @@ on:
 #             echo this is multi line  
 
 jobs:
-  job_first:
+  local_windows:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v3
