@@ -7,33 +7,33 @@ on:
     branches: ["main", "master  "]
   workflow_dispatch:
 
-jobs:
-  job2:
-      runs-on: ubuntu-latest
-      steps:
-       - uses: actions/checkout@v3
-
-       - name: Run a one-line script
-          run: echo this is my name
-
-       - name: Run a multi-line script
-          run: |
-            echo this is multi line,
-            echo this is multi line  
-
 # jobs:
-#   job_first:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v3
+#   job2:
+#       runs-on: ubuntu-latest
+#       steps:
+#        - uses: actions/checkout@v3
 
-#       - name: Run a one-line script
-#         run: echo this is my name 
+#        - name: Run a one-line script
+#           run: echo this is my name
 
-#       - name: Run a multi-line script
-#         run: |
-#           echo multi line 1 
-#           echo multi line 2 
+#        - name: Run a multi-line script
+#           run: |
+#             echo this is multi line,
+#             echo this is multi line  
+
+jobs:
+  job_first:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run a one-line script
+        run: echo this is my name 
+
+      - name: Run a multi-line script
+        run: |
+          echo multi line 1 
+          echo multi line 2 
 
         
 
